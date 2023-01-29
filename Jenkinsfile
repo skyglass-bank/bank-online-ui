@@ -9,12 +9,8 @@ node('workers'){
     }
 
     stage('Build Docker Image') {
-        steps {
-            echo '=== Building Petclinic Docker Image ==='
-            script {
-                app = docker.build(imageName)
-            }
-        }
+        echo '=== Building Petclinic Docker Image ==='
+        app = docker.build(imageName)
     }    
 
     stage('Push Docker Image'){
