@@ -9,9 +9,6 @@ node('workers'){
     }
 
     stage('Build Docker Image') {
-        when {
-            branch 'master'
-        }
         steps {
             echo '=== Building Petclinic Docker Image ==='
             script {
