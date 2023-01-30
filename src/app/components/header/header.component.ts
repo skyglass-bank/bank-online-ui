@@ -34,7 +34,7 @@ export class HeaderComponent implements OnInit {
   }
 
   public logout() {
-    let redirectURI: string = "http://bank-ui:4200/home";
+    let redirectURI: string = "https://bank.greeta.net/home";
     this.keycloak.logout(redirectURI);
   }
 
