@@ -20,13 +20,13 @@ function initializeKeycloak(keycloak: KeycloakService) {
   return () =>
     keycloak.init({
       config: {
-        url: 'http://localhost:8180/',
+        url: 'http://keycloak-server:8080/',
         realm: 'eazybankdev',
         clientId: 'eazypublicclient',
       },
       initOptions: {
         pkceMethod: 'S256',
-        redirectUri: 'http://localhost:4200/dashboard',
+        redirectUri: 'http://bank-ui:4200/dashboard',
       },loadUserProfileAtStartUp: false
     });
 }

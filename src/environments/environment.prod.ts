@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  rooturl : 'http://localhost:8080'
+  rooturl : 'http://bank-api:8081'
 };
